@@ -1,6 +1,6 @@
 class Admin::UsersController < ApplicationController
   def index
-    @users = User.all
+    @users = User.includes(:groups).all
   end
   def edit
     @user = User.find(params[:id])
@@ -17,6 +17,6 @@ class Admin::UsersController < ApplicationController
 
 protected
     def user_params
-      params.require(:user).permit(:email)
+      params.require(:user).permit(:email, :group_ids => [])
     end
 end
