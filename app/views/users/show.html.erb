@@ -1,0 +1,11 @@
+<h1>我的个人资料</h1>
+
+<p>Email: <%= @user.email %></p>
+<p>Timezone: <%= @user.time_zone %></p>
+<p>Legal_name: <%= @user.profile.legal_name %></p>
+<p>Birthday: <%= @user.profile.birthday %></p>
+<p>Location: <%= @user.profile.location %></p>
+<p>Education: <%= @user.profile.education %></p>
+<p>Occupation: <%= @user.profile.occupation %></p>
+<p>Bio: <%= simple_format @user.profile.bio %></p>
+<p>Specialty: <%= simple_format @user.profile.specialty %></p>
