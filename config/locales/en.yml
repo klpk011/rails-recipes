@@ -31,3 +31,5 @@
       draft: draft
       public: public
       private: private
+  bulk_update: batch edit
+  bulk_delete: batch delete
