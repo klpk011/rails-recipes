@@ -54,7 +54,7 @@ def bulk_update
     if event.save
       total +=1
     end
-  elsif params[:commit] == I18n.t(:bulk_dalete)
+  elsif params[:commit] == I18n.t(:bulk_delete)
     event.destroy
     total +=1
   end
