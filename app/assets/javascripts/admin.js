@@ -2,6 +2,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require bootstrap/alert
 //= require select2
 //= require nested_form_fields
 //= require bootstrap-datepicker/core
