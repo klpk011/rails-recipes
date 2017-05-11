@@ -18,6 +18,7 @@ gem "devise-i18n"
 gem "nested_form_fields"
 gem 'bootstrap-datepicker-rails'
 gem 'ckeditor'
+gem 'ranked-model'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
