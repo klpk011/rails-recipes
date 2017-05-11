@@ -62,6 +62,13 @@ def bulk_update
   flash[:alert] = "成功完成 #{total} 笔"
   redirect_to admin_events_path
 end
+
+def reorder
+  @event = Event.find_by_friendly_id!(params[:id])
+  @event.row_order_position = params[:position]
+  @event.save!
+  redirect_to admin_events_path
+end
   protected
 
   def event_params
